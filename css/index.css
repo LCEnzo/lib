@@ -1,3 +1,75 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    color: white;
+    background-color: #2e2e2e;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: minmax(40px, 4%) 1fr;
+    grid-template-columns: 1fr;
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    height: 100%;
+}
+
+header {
+    background-color: #1e1e1e;
+    text-shadow: 1px whitesmoke;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#adder-container {
+    visibility: false;
+}
+
+#book-display {
+    display: grid;
+}
+
+#add-book-button {
+    visibility: true;
+    color: whitesmoke;
+    background: radial-gradient(rgb(50, 50, 120), rgb(20, 20, 200));
+    border: 1px solid blue;
+    border-radius: 50%;
+    height: 5%;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    --cross-height: 20px;
+}
+
+.im {
+    visibility: true;
+    color: whitesmoke;
+    background: radial-gradient(rgb(63, 92, 95), rgb(25, 94, 94));
+    border: 2px solid rgb(24, 24, 156);
+    border-radius: 50%;
+    height: 8%;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0.4%;
+}
+
+.im img {
+    filter: invert(74%) sepia(79%) saturate(2327%) hue-rotate(126deg) brightness(105%) contrast(107%);
+    /* filter: invert(8%) sepia(74%) saturate(6746%) hue-rotate(246deg) brightness(95%) contrast(106%); */
+    /* filter: invert(99%) sepia(59%) saturate(49%) hue-rotate(277deg) brightness(110%) contrast(92%); */
+    /* filter: invert(50%) sepia(82%) saturate(633%) hue-rotate(130deg) brightness(94%) contrast(96%);; */
+}
